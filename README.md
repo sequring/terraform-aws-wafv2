@@ -20,7 +20,7 @@ Terraform 0.12. Pin module version to ~> 1.0. Submit pull-requests to terraform0
 
 ```hcl
 module "cloudfront_wafv2" {
-  source  = ""
+  source  = "git@github.com:sequring/terraform-aws-wafv2.git?ref=v1.0"
 
   name  = "cloudfront-web-acl"
   scope = "CLOUDFRONT"
@@ -31,7 +31,7 @@ module "cloudfront_wafv2" {
 
 ```hcl
 module "alb_wafv2" {
-  source  = ""
+  source  = "git@github.com:sequring/terraform-aws-wafv2.git?ref=v1.0"
 
   name  = "alb-web-acl"
   scope = "REGIONAL"
